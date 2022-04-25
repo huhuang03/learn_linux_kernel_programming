@@ -1,0 +1,8 @@
+I think the vmlinuxz is the kernel.
+
+scripts/extract-ikconfig  can show kernel config.
+
+gunzip -c /proc/config.gz do the same thing.
+
+
+git clone --depth=1 --branch rpi-5.4.y https://github.com/raspberrypi/linux.git

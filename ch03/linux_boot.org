@@ -1,0 +1,5 @@
+1. bios
+2. load grub
+3. load vmlinuxz 
+4. load initrd
+5. load the real kernel
