@@ -1,0 +1,3 @@
+- make menuconfig
+- make -j'n' all
+- created the compressed kernel image arch/<arch>/boot/[b|z|u]image and uncompressed kernel image (vmlinux)

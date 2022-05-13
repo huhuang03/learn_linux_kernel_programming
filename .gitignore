@@ -7,7 +7,9 @@ iso/
 *.mod.c
 *.mod.o
 *.o
+*.o.d
 Module.symvers
 modules.order
 
 .vscode/
+rpi_work/

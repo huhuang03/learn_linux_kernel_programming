@@ -1,0 +1,7 @@
+#+BEGIN_SRC c
+#define KERNEL_SOH "\001"
+#+END_SRC
+
+what't the \001 value?
+
+这个一个byte的八进制表示。范围为\000 - \377(十进制255)
