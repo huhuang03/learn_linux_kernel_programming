@@ -1,0 +1,23 @@
+* Install packages
+sudo apt install git fakeroot build-essential tar ncurses-dev tar xz-utils libssl-dev bc stress python3-distutils libelf-dev linux-headers-$(uname -r) bison flex libncurses5-dev util-linux net-tools linux-tools-$(uname -r) exuberant-ctags cscope sysfsutils gnome-system-monitor curl perf-tools-unstable gnuplot rt-tests indent tree pstree smem libnuma-dev numactl hwloc bpfcc-tools sparse flawfinder cppcheck tuna hexdump openjdk-14-jre trace-cmd virt-what
+
+* config
+cp /boot/config-$(uname -r) ./.config
+lsmod > /tmp/lsmod.now
+make LSMOD=/tmp/lsmod.now localmodconfig
+
+* make target
+make clean: will not delete .config.
+make mrproper: look can delete .config, need try
+
+* builds
+/boot/vmlinuxz-<kernel-ver> is a copy of 
+arch/<arch>/bzImage file. In other words, it is the compressed kernel image.
+
+
+* local verison
+CONFIG_LOCALVERSION
+
+
+* initrd(initramfs)
+Is the template fs loaded in ram by boot loader.

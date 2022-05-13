@@ -1,1 +1,13 @@
 iso/
+/linux/
+
+*.cmd
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.o
+Module.symvers
+modules.order
+
+.vscode/

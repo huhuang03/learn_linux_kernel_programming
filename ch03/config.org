@@ -1,0 +1,4 @@
+* Intial build config.
+cp /boot/config-$(uname -r) ./.config
+lsmod > /tmp/lsmod.now
+make LSMOD=/tmp/lsmod.now localmodconfig
